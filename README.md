@@ -144,6 +144,19 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Ge
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetBTStatus
 ```
+
+## Set device name
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/set_dname?name=dabman
+```
+
+## Scan wifi
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/scan_wifi
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/scan_results
+```
+
 # Search and show results example
 ## Search for station called "radio"
 ```
@@ -276,18 +289,6 @@ Result:
 
 # Other Commands
 
-
-http://dabman/
-
-http://dabman/set_dname?name=dabman-sz
-
-http://dabman/scan_wifi
-
-http://dabman/scan_results
-
-
 http://dabman:52525/root_XXYY.xml
 
 http://dabman:52525/root_XXYY_S.xml
-
-http://dabman:52525/walkie_XXYY_S.xml
