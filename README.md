@@ -274,7 +274,7 @@ Result:
 ```
 
 
-# Other Commands not by the Android App
+# Other Commands
 
 
 http://dabman/
