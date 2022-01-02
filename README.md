@@ -57,23 +57,33 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Se
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/init?language=de
 ```
 
-## Hotkey-list
-```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist
-```
-
 ## Play-info
 working only on wlan interface not working for Wire Interface:
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playinfo
 ```
 
-## DAB hotkey-list
+## WEBRADIO-FAV-list
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist
+```
+
+## FM-FAV-list
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist
+```
+
+## Play FM-FAV
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GotoFMfav?fav=<ID>
+```
+
+## DAB-FAV-list
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist
 ```
 
-## Play DAB-hotkey
+## Play DAB-FAV
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playDABhotkey?key=1
 ```
@@ -123,16 +133,6 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/pl
 ## Play status
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/background_play_status
-```
-
-## GetFMFAVlist
-```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist
-```
-
-## GotoFMfav
-```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GotoFMfav?fav=<ID>
 ```
 
 ## Set volume and mute
