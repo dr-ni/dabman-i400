@@ -8,6 +8,11 @@ It has been modified and improved for i400 devices
 
 # COMMANDS
 
+## GetSystemInfo
+```
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo
+```
+
 ## Sendkey
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Sendkey/Sendkey?key=\<KEY\>
@@ -143,18 +148,6 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Ge
 ## GetBTStatus
 ```
 curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetBTStatus
-```
-
-## Set device name
-```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/set_dname?name=dabman
-```
-
-## Scan wifi
-```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/scan_wifi
-
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/scan_results
 ```
 
 # Search and show results example
