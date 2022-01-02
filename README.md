@@ -1,9 +1,9 @@
 
 # Dabman i400 Remote Control
 
-This API description was initially forked from https://github.com/tabacha/dabman-api (for i450 devices)
+This API description was initially forked from https://github.com/tabacha/dabman-api (i450 devices)
 
-It has been modyfied and improved for i400 devices
+It has been modified and improved for i400 devices
 
 
 # COMMANDS
