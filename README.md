@@ -15,7 +15,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Ge
 
 ## Sendkey
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Sendkey/Sendkey?key=<KEY>
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Sendkey?key=<KEY>
 ```
 
 | KEY | Description |
