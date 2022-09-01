@@ -3,7 +3,12 @@
 
 This API description was initially forked from https://github.com/tabacha/dabman-api (i450 devices)
 
-It has been modified and improved for i400 devices
+It has been modified and improved for i400 devices.
+
+To save your webradio station to favorits [1..5] first search the station and then choose it for playing (Play station with ID). Press 5 seconds the IR-Remote button "FAV+". Now the favorits menu appears and you have to choose place [1..5] with the IR-Remote UP/Down buttons. Finally press the IR-Remote button "ENTER".
+
+Sometimes the software is not working reliable:
+Before you are getting crazy unplug the power for a complete reset and call the "Init" command...
 
 
 # COMMANDS
