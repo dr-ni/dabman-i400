@@ -131,7 +131,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/ba
 ## Playlogo
 works only if Radiostation has a play logo
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playlogo.jpg
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman:8080/playlogo.jpg
 ```
 
 
