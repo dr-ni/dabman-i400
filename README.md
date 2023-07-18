@@ -40,8 +40,8 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Se
 | 13 | Language |
 | 14 | Light |
 | 15 | Fav-List |
-| 28 | Mode |
-| 29 | Play/Pause |
+| 28 | Mode (Webradio DAB FM BT ) |
+| 29 | Play/Pause (also for BT) |
 | 31 | Next |
 | 32 | Prev |
 | 115 | 1 |
