@@ -17,7 +17,7 @@ You need curl and xml2 (on raspberrypi ```sudo apt install curl xml2```)
 
 ## GetSystemInfo
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo | xml2
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo | xml2 | sed -r 's/\/result\///'
 ```
 
 ## Sendkey
@@ -67,12 +67,12 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/in
 ## Play-info
 working only on wlan interface not working for Wire Interface:
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playinfo | xml2
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playinfo | xml2 | sed -r 's/\/result\///'
 ```
 
 ## WEBRADIO-FAV-list
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist | xml2
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist | xml2 | sed -r 's/\/result\///'
 ```
 
 ## Play station with ID
@@ -82,7 +82,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/pl
 
 ## FM-FAV-list
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist | xml2
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist | xml2 | sed -r 's/\/result\///'
 ```
 
 ## Play FM-FAV
@@ -92,7 +92,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Go
 
 ## DAB-FAV-list
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist | xml2
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist | xml2 | sed -r 's/\/result\///'
 ```
 
 ## Play DAB-FAV
