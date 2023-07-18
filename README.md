@@ -10,7 +10,7 @@ To save your webradio station to favorits [1..5] first search the station and th
 Sometimes the software is not working reliable:
 Before you are getting crazy unplug the power for a complete reset and call the "Init" command...
 
-You need curl and xml2 (on raspberrypi ```sudo apt install curl xml2```)
+You need sed curl and xml2 (on raspberrypi (sudo apt install curl xml2)
 
 
 # COMMANDS
