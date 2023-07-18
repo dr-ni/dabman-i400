@@ -10,12 +10,14 @@ To save your webradio station to favorits [1..5] first search the station and th
 Sometimes the software is not working reliable:
 Before you are getting crazy unplug the power for a complete reset and call the "Init" command...
 
+You need curl and xml2 (on raspberrypi ```sudo apt install curl xml2```)
+
 
 # COMMANDS
 
 ## GetSystemInfo
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo | xml2
 ```
 
 ## Sendkey
@@ -65,12 +67,12 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/in
 ## Play-info
 working only on wlan interface not working for Wire Interface:
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playinfo
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/playinfo | xml2
 ```
 
 ## WEBRADIO-FAV-list
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist | xml2
 ```
 
 ## Play station with ID
@@ -80,7 +82,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/pl
 
 ## FM-FAV-list
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist | xml2
 ```
 
 ## Play FM-FAV
@@ -90,7 +92,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Go
 
 ## DAB-FAV-list
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist
+curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist | xml2
 ```
 
 ## Play DAB-FAV
