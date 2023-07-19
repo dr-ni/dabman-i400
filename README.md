@@ -61,7 +61,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Se
 ## Init
 
 ```
-curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/init?language=de
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/init?language=de | xml2 | sed -r 's/\/result\///'
 ```
 
 ## Play-info
