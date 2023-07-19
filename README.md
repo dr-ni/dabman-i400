@@ -17,7 +17,7 @@ You need sed curl and xml2 (on raspberrypi (sudo apt install curl xml2)
 
 ## GetSystemInfo
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo | xml2 | sed -r 's/\/result\///'
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetSystemInfo | xml2 | sed -r 's/\/menu\///' | sed -r 's/wifi_info\///'
 ```
 
 ## Sendkey
@@ -72,7 +72,7 @@ curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman
 
 ## WEBRADIO-FAV-list
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist | xml2 | sed -r 's/\/result\///'
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/hotkeylist | xml2 | sed -r 's/\/menu//' | sed -r 's/\/item_//' | sed -r 's/\/item\///' | sed -r 's/\/item//' | sed -r 's/status=file//' | sed '/^$/d'
 ```
 
 ## Play station with ID
@@ -82,7 +82,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/pl
 
 ## FM-FAV-list
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist | xml2 | sed -r 's/\/result\///'
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/GetFMFAVlist | xml2 | sed -r 's/\/menu//' | sed -r 's/\/item_//' | sed -r 's/\/item\///' | sed -r 's/\/item//' | sed -r 's/status=file//' | sed '/^$/d'
 ```
 
 ## Play FM-FAV
@@ -92,7 +92,7 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Go
 
 ## DAB-FAV-list
 ```
-curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist | xml2 | sed -r 's/\/result\///'
+curl -s -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/DABhotkeylist | xml2 | sed -r 's/\/menu//' | sed -r 's/\/item_//' | sed -r 's/\/item\///' | sed -r 's/\/item//' | sed -r 's/status=file//' | sed '/^$/d'
 ```
 
 ## Play DAB-FAV
