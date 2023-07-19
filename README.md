@@ -42,20 +42,36 @@ curl -H 'Authorization: Basic c3UzZzRnbzZzazc6amkzOTQ1NHh1L14=' http://dabman/Se
 | 13 | Language |
 | 14 | Light |
 | 15 | Fav-List |
-| 28 | Mode (Webradio DAB FM BT ) |
+| 17 | 0 |
+| 18 | 1 |
+| 19 | 2 |
+| 20 | 3 |
+| 21 | 4 |
+| 22 | 5 |
+| 23 | 6 |
+| 24 | 7 |
+| 25 | 8 |
+| 26 | 9 |
+| 123 | 10 |
+| 28 | Mode (Webradio DAB FM BT UPNP USB) |
 | 29 | Play/Pause (also for BT) |
+| 30 | Stop |
 | 31 | Next |
 | 32 | Prev |
-| 115 | 1 |
-| 116 | 2 |
-| 116 | 3 |
-| 117 | 4 |
-| 118 | 5 |
-| 119 | 6 |
-| 120 | 7 |
-| 121 | 8 |
-| 122 | 9 |
-| 123 | 10 |
+| 36 | USB |
+| 37 | FM |
+| 40 | Webradio Menu |
+| 65 | Arrangement FM/DAB list |
+| 115 | Hotkey 1 |
+| 116 | Hotkey 2 |
+| 117 | Hotkey 3 |
+| 118 | Hotkey 4 |
+| 119 | Hotkey 5 |
+| 120 | Hotkey 6 |
+| 121 | Hotkey 7 |
+| 122 | Hotkey 8 |
+| 123 | Hotkey 9 |
+| 124 | Hotkey 10 |
 | 168 | Settings |
 
 ## Init
